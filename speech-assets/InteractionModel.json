@@ -19,51 +19,40 @@
     {
       "name": "AnswerIntent",
       "samples": [
-        "{StateName}",
-        "{Capital}",
-        "{StatehoodYear}",
-        "{StatehoodOrder}",
-        "{Abbreviation}",
-        "tell me about {StateName}",
-        "tell me about {Capital}",
-        "tell me about {StatehoodYear}",
-        "tell me about {StatehoodOrder}",
-        "tell me about {Abbreviation}",
-        "what do you know about {StateName}",
-        "what do you know about {Capital}",
-        "what do you know about {StatehoodYear}",
-        "what do you know about {StatehoodOrder}",
-        "what do you know about {Abbreviation}",
-        "{StateName} information",
-        "{Capital} information",
-        "{StatehoodYear} information",
-        "{StatehoodOrder} information",
-        "{Abbreviation} information"
+        "{Name}",
+        "{Program}",
+        "{Session}",
+        "{City}",
+        "tell me about {Name}",
+        "tell me about {Program}",
+        "tell me about {Session}",
+        "tell me about Techstars companies in {City}",
+        "tell me about companies in {City}",
+        "what do you know about {Name}",
+        "what do you know about {Program}",
+        "what do you know about {Session}",
+        "what do you know about Techstars companies in {City}",
+        "what do you know about companies in {City}"
       ],
       "slots": [
         {
-          "name": "StateName",
-          "type": "AMAZON.US_STATE",
+          "name": "Name",
+          "type": "TS_COMPANY",
           "samples": []
         },
         {
-          "name": "Capital",
+          "name": "Program",
+          "type": "TS_PROGRAM",
+          "samples": []
+        },
+        {
+          "name": "Session",
+          "type": "TS_SESSION",
+          "samples": []
+        },
+        {
+          "name": "City",
           "type": "AMAZON.US_CITY",
-          "samples": []
-        },
-        {
-          "name": "StatehoodYear",
-          "type": "AMAZON.FOUR_DIGIT_NUMBER",
-          "samples": []
-        },
-        {
-          "name": "Abbreviation",
-          "type": "US_STATE_ABBR",
-          "samples": []
-        },
-        {
-          "name": "StatehoodOrder",
-          "type": "AMAZON.NUMBER",
           "samples": []
         }
       ]
@@ -83,256 +72,101 @@
   ],
   "types": [
     {
-      "name": "US_STATE_ABBR",
+      "name": "TS_COMPANY",
       "values": [
         {
           "name": {
-            "value": "AK"
+            "value": "Appsembler"
           }
-        },
+        }
         {
           "name": {
-            "value": "AL"
+            "value": "Cloudability"
           }
-        },
+        }
         {
           "name": {
-            "value": "AZ"
+            "value": "Cloudsnap"
           }
-        },
+        }
         {
           "name": {
-            "value": "AR"
+            "value": "Conductrics"
           }
-        },
+        }
         {
           "name": {
-            "value": "CA"
+            "value": "Distil Networks"
           }
-        },
+        }
         {
           "name": {
-            "value": "CO"
+            "value": "Emergent One"
           }
-        },
+        }
         {
           "name": {
-            "value": "CT"
+            "value": "Epic Playground"
           }
-        },
+        }
         {
           "name": {
-            "value": "DE"
+            "value": "Flomio"
           }
-        },
+        }
         {
           "name": {
-            "value": "FL"
+            "value": "Keen I.O."
           }
-        },
+        }
         {
           "name": {
-            "value": "GA"
+            "value": "Tempo I.Q."
           }
-        },
+        }
         {
           "name": {
-            "value": "HI"
+            "value": "Vidmaker"
           }
-        },
+        }
+      ]
+    }
+    {
+      "name": "TS_PROGRAM",
+      "values": [
         {
           "name": {
-            "value": "ID"
+            "value": "Tech stars Cloud"
           }
-        },
+        }
+      ]
+    }
+    {
+      "name": "TS_SESSION",
+      "values": [
         {
           "name": {
-            "value": "IL"
+            "value": "Tech stars Cloud Winter 2012"
           }
-        },
+        }
+      ]
+    }
+    {
+      "name": "TS_STATUS",
+      "values": [
         {
           "name": {
-            "value": "IN"
+            "value": "Active"
           }
-        },
+        }
         {
           "name": {
-            "value": "IA"
+            "value": "Failed"
           }
-        },
+        }
         {
           "name": {
-            "value": "KS"
-          }
-        },
-        {
-          "name": {
-            "value": "KY"
-          }
-        },
-        {
-          "name": {
-            "value": "LA"
-          }
-        },
-        {
-          "name": {
-            "value": "ME"
-          }
-        },
-        {
-          "name": {
-            "value": "MD"
-          }
-        },
-        {
-          "name": {
-            "value": "MA"
-          }
-        },
-        {
-          "name": {
-            "value": "MI"
-          }
-        },
-        {
-          "name": {
-            "value": "MN"
-          }
-        },
-        {
-          "name": {
-            "value": "MS"
-          }
-        },
-        {
-          "name": {
-            "value": "MO"
-          }
-        },
-        {
-          "name": {
-            "value": "MT"
-          }
-        },
-        {
-          "name": {
-            "value": "NE"
-          }
-        },
-        {
-          "name": {
-            "value": "NV"
-          }
-        },
-        {
-          "name": {
-            "value": "NH"
-          }
-        },
-        {
-          "name": {
-            "value": "NJ"
-          }
-        },
-        {
-          "name": {
-            "value": "NM"
-          }
-        },
-        {
-          "name": {
-            "value": "NY"
-          }
-        },
-        {
-          "name": {
-            "value": "NC"
-          }
-        },
-        {
-          "name": {
-            "value": "ND"
-          }
-        },
-        {
-          "name": {
-            "value": "OH"
-          }
-        },
-        {
-          "name": {
-            "value": "OK"
-          }
-        },
-        {
-          "name": {
-            "value": "OR"
-          }
-        },
-        {
-          "name": {
-            "value": "PA"
-          }
-        },
-        {
-          "name": {
-            "value": "RI"
-          }
-        },
-        {
-          "name": {
-            "value": "SC"
-          }
-        },
-        {
-          "name": {
-            "value": "SD"
-          }
-        },
-        {
-          "name": {
-            "value": "TN"
-          }
-        },
-        {
-          "name": {
-            "value": "TX"
-          }
-        },
-        {
-          "name": {
-            "value": "UT"
-          }
-        },
-        {
-          "name": {
-            "value": "VT"
-          }
-        },
-        {
-          "name": {
-            "value": "VA"
-          }
-        },
-        {
-          "name": {
-            "value": "WA"
-          }
-        },
-        {
-          "name": {
-            "value": "WV"
-          }
-        },
-        {
-          "name": {
-            "value": "WI"
-          }
-        },
-        {
-          "name": {
-            "value": "WY"
+            "value": "Acquired"
           }
         }
       ]

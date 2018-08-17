@@ -1,26 +1,18 @@
-AnswerIntent {StateName}
-AnswerIntent {Capital}
-AnswerIntent {StatehoodYear}
-AnswerIntent {StatehoodOrder}
-AnswerIntent {Abbreviation}
+AnswerIntent {Name}
+AnswerIntent {Program}
+AnswerIntent {Session}
 
-AnswerIntent tell me about {StateName}
-AnswerIntent tell me about {Capital}
-AnswerIntent tell me about {StatehoodYear}
-AnswerIntent tell me about {StatehoodOrder}
-AnswerIntent tell me about {Abbreviation}
+AnswerIntent tell me about {Name}
+AnswerIntent tell me about {Program}
+AnswerIntent tell me about {Session}
+AnswerIntent tell me about Techstars companies in {City}
+AnswerIntent tell me about companies in {City}
 
-AnswerIntent what do you know about {StateName}
-AnswerIntent what do you know about {Capital}
-AnswerIntent what do you know about {StatehoodYear}
-AnswerIntent what do you know about {StatehoodOrder}
-AnswerIntent what do you know about {Abbreviation}
-
-AnswerIntent {StateName} information
-AnswerIntent {Capital} information
-AnswerIntent {StatehoodYear} information
-AnswerIntent {StatehoodOrder} information
-AnswerIntent {Abbreviation} information
+AnswerIntent what do you know about {Name}
+AnswerIntent what do you know about {Program}
+AnswerIntent what do you know about {Session}
+AnswerIntent what do you know about Techstars companies in {City}
+AnswerIntent what do you know about companies in {City}
 
 QuizIntent start a quiz
 QuizIntent start a quiz game
